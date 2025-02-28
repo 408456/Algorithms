@@ -21,6 +21,7 @@ def merge_sort(arr):
     right = merge_sort(arr[middle:])
     return merge_two_list(left, right)
 
+
 def main():
     with open("input.txt", "r") as f:
         n = int(f.readline().strip())
@@ -33,5 +34,7 @@ def main():
         f.write(" ".join(map(str, sorted_arr)) + "\n")
         f.seek(0)
         print(f.read())
+
+
 if __name__ == "__main__":
     main()

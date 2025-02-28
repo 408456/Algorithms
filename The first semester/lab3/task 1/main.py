@@ -11,14 +11,14 @@ def quick_sort(s):
 
 def main():
     with open("input.txt", "r") as f:
-        n = int(f.readline().strip())  # Читаем количество элементов
-        arr = list(map(int, f.readline().strip().split()))  # Читаем массив
+        n = int(f.readline().strip())
+        arr = list(map(int, f.readline().strip().split()))
 
-    sorted_arr = quick_sort(arr)  # Сортируем массив
-    print(" ".join(map(str, sorted_arr)))  # Выводим в консоль
+    sorted_arr = quick_sort(arr)
+    print(" ".join(map(str, sorted_arr)))
 
     with open("output.txt", "w") as f:
-        f.write(" ".join(map(str, sorted_arr)))  # Записываем в файл
+        f.write(" ".join(map(str, sorted_arr)))
 
 
 if __name__ == "__main__":

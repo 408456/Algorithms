@@ -8,7 +8,7 @@ def generate_fibonacci(limit):
 
 
 def file_handler(input_file, output_file):
-    fib_set = generate_fibonacci(10 ** 10)  # Генерируем все числа Фибоначчи один раз
+    fib_set = generate_fibonacci(10 ** 10)
     with open(input_file, "r") as fin, open(output_file, "w") as fout:
         N = int(fin.readline().strip())
         for _ in range(N):
